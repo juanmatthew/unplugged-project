@@ -264,15 +264,126 @@ reviews h3 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width:768px){
+  /*Tablet Styles Here*/
+
+
+  /*----HOMEPAGE----*/
+  header {
+    width: 100%;
+    justify-content: baseline;
+    
+  }
+
+  aside .content-wrapper {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .form {
+    width: 40%;
+  }
+
+  /*To get rid of the header divider*/
+  .header-divider {
+    display: none;
+  }
+
+  /*Header Nav Section*/
+  header nav ul {
+    width: 40%;
+    justify-content: center;
+  }
+
+  header nav ul li {
+    margin: 20px;
+  }
+
+  header .content-wrapper {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  
+  /*Feature Descriptions*/
+  article .features-item-description {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 1;
+  }
+
+  /*Reviews*/
+  article h3, 
+  article p {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .footer-content {
+    width: 80%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /*-----FAQ PAGE------*/
+  .faq-content {
+    flex-basis: 2;
+  }
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+
+
+  /*-----ABOUT PAGE-----*/
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 90%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/*REMINDER: pay attention to the header divider div*/
+
+
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop Styles Here*/
 }
 
 /* ==========================================================================
