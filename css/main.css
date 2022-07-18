@@ -130,7 +130,7 @@ header .content-wrapper {
 }
 
 /*
-.copywrite {
+.copyright {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,6 +158,28 @@ header nav ul {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 40px;
+  padding: 10px;
+}
+
+footer .copyright p {
+  padding: 5px;
 }
 
 .content-wrapper {
@@ -270,22 +292,22 @@ reviews h3 {
 
   /*----HOMEPAGE----*/
   header {
-    width: 100%;
-    justify-content: baseline;
-    
-  }
-
-  aside .content-wrapper {
-    width: 40%;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    padding: 5px;
     justify-content: space-around;
-    align-items: center;
   }
 
-  .form {
-    width: 40%;
+  /*Header Nav Section*/
+   header nav ul {
+    justify-content: space-between;
+  }
+
+  header nav {
+    width:35%;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
   }
 
   /*To get rid of the header divider*/
@@ -293,40 +315,67 @@ reviews h3 {
     display: none;
   }
 
-  /*Header Nav Section*/
-  header nav ul {
-    width: 40%;
+
+
+  /*Sign Up Form Area*/
+  aside {
+    display: flex;
     justify-content: center;
-  }
-
-  header nav ul li {
-    margin: 20px;
-  }
-
-  header .content-wrapper {
-    width: 90%;
-    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
   }
 
   
+
+  
   /*Feature Descriptions*/
-  article .features-item-description {
-    width: 25%;
+  .features {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     flex-flow: row wrap;
-    flex-basis: 1;
   }
 
+  .features article {
+    width: 60%;
+    margin: 10px 0;
+  }
+
+  .features .features-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .features p {
+    margin: 0;
+  }
+
+ 
   /*Reviews*/
-  article h3, 
-  article p {
+  .reviews {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .reviews h2 {
+    margin: 20px 0;
+  }
+
+  .reviews h3 {
+    width: 45%;
+  }
+
+  /*.reviews h3, 
+  .reviews p {
     width: 40%;
     display: flex;
     justify-content: space-between;
   }
+*/
 
+  /*Footer*/
   footer .footer-content {
     width: 80%;
     padding: 10px 30px;
@@ -337,11 +386,15 @@ reviews h3 {
 
   /*-----FAQ PAGE------*/
   .faq-content {
-    flex-basis: 2;
+    flex-basis: 200px;
   }
 
   .faq .content-wrapper {
-    justify-content: space-between;
+    margin: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .faq-content {
