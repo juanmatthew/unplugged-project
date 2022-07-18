@@ -163,10 +163,12 @@ footer .content-wrapper {
 .content-wrapper {
   width: 80%;
   padding: 10px;
+  margin: 0 25px;
 }
 
 article .features-item-description {
   width: 45%;
+  margin: 0 100px;
 }
 
 reviews h3 {
