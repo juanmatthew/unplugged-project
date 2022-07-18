@@ -102,29 +102,40 @@ footer {
   flex-flow: row wrap;
 }
 
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 header nav ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 
-.content-wrapper {
+header .content-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-
-.social {
+.social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+/*
 .copywrite {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+*/
 
 /* ==========================================================================
    Helper classes
