@@ -92,6 +92,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/*CORRECT CODE FROM HELPER CODE ADDED BECAUSE MY MOBILE - HOME PAGE DOESN'T HAVE THE FEATURES BE SIDE BY SIDE*/
+
+/*Content Wrapper helper style commented out because I have it below and want to see the difference
+
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+  */
+  
+
 /*----Base Header - Footer Styles----*/
 
 header,
@@ -101,6 +113,7 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+
 
 header nav {
   display: flex;
@@ -113,6 +126,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   /*align-items: center;*/
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  width: 100%;
 }
 
 
@@ -121,6 +136,15 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  margin: 0;
+}
+
+/*CORRECT CODE FROM HELPER CODE ADDED*/
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 .social-icons {
@@ -137,8 +161,45 @@ header .content-wrapper {
 }
 */
 
+
+/*CORRECT CODE FROM HELPER CODE ADDED*/
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
 /*-----Mobile Styles------*/
 
+/*CORRECT CODE FROM HELPER CODE ADDED*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/*HEADER STYLES*/
 header {
   padding: 15px 0;
 }
@@ -155,6 +216,15 @@ header nav ul {
   width: 100%;
 }
 
+/*CORRECT CODE FROM HELPER CODE ADDED*/
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*FOOTER STYLES*/
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
@@ -182,21 +252,67 @@ footer .copyright p {
   padding: 5px;
 }
 
+/*CONTENT WRAPPER STYLES*/
 .content-wrapper {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   margin: 0 25px;
 }
 
+/*CORRECT CODE FROM HELPER CODE ADDED*/
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features p {
+  margin: 0;
+}
+
+/*FEATURES STYLES
 article .features-item-description {
   width: 45%;
   margin: 0 100px;
 }
+*/
 
-reviews h3 {
-  width: 80;
+
+/*REVIEW STYLES*/
+.reviews h3 {
+  width: 80%;
+  margin: 10px;
 }
 
+/*CORRECT CODE FROM HELPER CODE ADDED*/
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+
+/*CORRECT CODE FROM HELPER CODE ADDED*/
 
 /* ==========================================================================
    Helper classes
@@ -289,10 +405,17 @@ reviews h3 {
 @media only screen and (min-width:768px){
   /*Tablet Styles Here*/
 
+  /*CORRECT CODE FROM HELPER CODE ADDED BECAUSE MY MOBILE - HOME PAGE DOESN'T HAVE THE FEATURES BE SIDE BY SIDE*/
+
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
 
   /*----HOMEPAGE----*/
   header {
-    padding: 5px;
+    padding: 20px;
     justify-content: space-around;
   }
 
@@ -318,17 +441,40 @@ reviews h3 {
 
 
   /*Sign Up Form Area*/
-  aside {
+  aside .content-wrapper {
+    /*CORRECT CODE FROM HELPER CODE ADDED - also added the class instead of styling the general element*/
+
+    /*original code*/
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    /* align-items: center;
+    margin: 50px 0;*/
+  }
+
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  .form-description,
+    aside .content-wrapper {
+      width: 50%;
+      margin: 0;
+    }
+  
+  
+  
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  .features article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row nowrap;
+    flex-flow: column wrap;
+    flex-basis: 50%;
   }
 
-  
+  .features .features-item-description {
+    width: 50%;
+  }
 
-  
-  /*Feature Descriptions*/
+  /*commenting out to see if the helper code helps my issue
   .features {
     display: flex;
     justify-content: center;
@@ -349,7 +495,7 @@ reviews h3 {
 
   .features p {
     margin: 0;
-  }
+  }*/
 
  
   /*Reviews*/
