@@ -200,19 +200,23 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  
 }
 
 /*HEADER STYLES*/
 header {
   padding: 15px 0;
+  
 }
 
 header nav {
   width: 60%;
+  
 }
 
 header nav ul {
   width: 45%;
+  
 }
 
 .header-divider {
@@ -450,7 +454,13 @@ article .features-item-description {
 
   /*-----------HOMEPAGE-------------*/
 
-  /*Sign Up Form Area*/
+  /*Aside--Sign Up Form Area*/
+
+  aside {
+    display: flex;
+    justify-content: space-around;
+  }
+
   aside .content-wrapper {
     /*CORRECT CODE FROM HELPER CODE ADDED - also added the class instead of styling the general element*/
     
@@ -463,12 +473,12 @@ article .features-item-description {
 
   aside .form {
     padding: 40px 20px;
-    border: 2px dotted purple;
+    
   }
 
   aside .form-description {
     padding: 0 60px;
-    border: 2px dotted purple;
+    
   }
 
   /* 
@@ -482,13 +492,10 @@ article .features-item-description {
   }
   */
 
-  
-
   aside .content-wrapper {
     margin: 10px 20px;
-    border: 2px dotted purple;
+    
   }
-
 
   /*CORRECT CODE FROM HELPER CODE ADDED - but removes the classes for the form  */
   aside .form-description, 
@@ -498,8 +505,6 @@ article .features-item-description {
       
     }
   
-  
-
   
   /*CORRECT CODE FROM HELPER CODE ADDED*/
   .features article {
@@ -580,7 +585,7 @@ article .features-item-description {
     margin: 40px 10px;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /*padding: 10px 30px;*/
   }
@@ -588,13 +593,6 @@ article .features-item-description {
   footer .content-wrapper {
     width: 100%;
     padding: 0 65px;
-  }
-
-  /*CORRECT CODE FROM HELPER CODE ADDED*/
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   footer .contact {
@@ -683,6 +681,205 @@ article .features-item-description {
 
 @media only screen and (min-width: 1200px) {
   /*Desktop Styles Here*/
+
+  /*STUCK: fixing the header, fixing the review section, spacing out the faqs*/
+
+  header {
+    width: 100%;
+    border: 2px dotted purple;
+  }
+
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /*padding: 0 280px;*/
+    border: 2px dotted #66f7e3;
+  }
+  
+  header nav {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    border: 2px dotted #edf10f;
+  }
+  
+  header nav ul {
+    width: 45%;
+    border: 2px dotted #078021;
+  }
+
+  header img {
+    border: 2px dotted black;
+  }
+
+  /*---------------HOMEPAGE-------------------*/
+
+  /*--ASIDE--SIGNUP FORM--*/
+
+  aside {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper {
+    /*CORRECT CODE FROM HELPER CODE ADDED - also added the class instead of styling the general element*/
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    /* align-items: center;
+    margin: 50px 0;*/
+  }
+
+  aside .form {
+    padding: 40px 20px;
+    
+  }
+
+  aside .form-description {
+    padding: 0 60px;
+    
+  }
+
+  /*CORRECT CODE FROM HELPER CODE ADDED - but removes the classes for the form  */
+  aside .form-description, 
+  aside .content-wrapper {
+     width: 35%;
+     margin: 0;
+    }
+
+  
+  /*Reviews*/
+  .reviews {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .reviews h2 {
+    margin: 40px 0;
+  }
+
+  .reviews h3 {
+    width: 50%;
+  }
+
+  /*
+
+  .reviews article {
+    padding: 50px 100px;
+  }
+  
+  .reviews .content-wrapper {
+    width: 200%;
+    border: 2px dotted #2f4beb;
+  }
+  */
+
+  /*Footer*/
+  footer {
+    padding: 5px 0;
+  }
+
+
+  footer .content-wrapper {
+    width: 100%;
+    padding: 0 65px;
+  }
+
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  /*------------------FAQ----------------------*/
+
+  .faq {
+    padding-left: 285px;
+  }
+
+  .faq .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    /*margin: 60px 150px;*/
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+    margin-bottom: 20px;
+  }
+
+  .faq h2 {
+    padding: 10px;
+  }
+
+  .faq h4,
+  .faq p {
+    width: 100%;
+  }
+
+
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+
+
+  /*-------------------ABOUT--------------------*/
+  main {
+    padding-left: 300px;
+    border: 2px dotted purple;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .mission .content-wrapper {
+    /*
+    padding: 10px;
+    margin: 40px 20px 50px 0;*/
+    border: 2px dotted rgb(4, 128, 0);
+  }
+
+  .mission-content p {
+    width: 45%;
+    
+  }
+
+  .mission {
+    border: 2px dotted rgb(126, 128, 0);
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 90%;
+    
+  }
+  
+  /*contact section*/
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .contact-section .content-wrapper {
+
+    border: 2px dotted purple;
+    /*
+    margin: 50px 45px;
+    padding: 15px;*/
+  }
 }
 
 /* ==========================================================================
