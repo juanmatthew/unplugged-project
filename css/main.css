@@ -832,10 +832,6 @@ article .features-item-description {
 
 
   /*-------------------ABOUT--------------------*/
-  main {
-    padding-left: 300px;
-    border: 2px dotted purple;
-  }
 
   .mission-content {
     display: flex;
