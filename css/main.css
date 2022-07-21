@@ -1,6 +1,9 @@
+
+/*helper border styles*/
 * {
   border: 1px dotted red;
 }
+/*border: 2px dotted purple;*/
 
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -254,9 +257,10 @@ footer .copyright p {
 
 /*CONTENT WRAPPER STYLES*/
 .content-wrapper {
-  width: 100%;
-  padding: 10px;
+  width: 90%;
+  padding: 0;
   margin: 0 25px;
+  
 }
 
 /*CORRECT CODE FROM HELPER CODE ADDED*/
@@ -311,6 +315,11 @@ article .features-item-description {
   margin-bottom: 40px;
 }
 
+/*----------ABOUT PAGE--------------*/
+.mission {
+  padding: 10px 15px 10px 0;
+  
+}
 
 /*CORRECT CODE FROM HELPER CODE ADDED*/
 
@@ -413,7 +422,7 @@ article .features-item-description {
     margin: 100px 0;
   }
 
-  /*----HOMEPAGE----*/
+  /*---------------HOMEPAGE----------------*/
   header {
     padding: 20px;
     justify-content: space-around;
@@ -439,12 +448,12 @@ article .features-item-description {
   }
 
 
+  /*-----------HOMEPAGE-------------*/
 
   /*Sign Up Form Area*/
   aside .content-wrapper {
     /*CORRECT CODE FROM HELPER CODE ADDED - also added the class instead of styling the general element*/
-
-    /*original code*/
+    
     display: flex;
     justify-content: center;
     flex-flow: row nowrap;
@@ -452,14 +461,45 @@ article .features-item-description {
     margin: 50px 0;*/
   }
 
-  /*CORRECT CODE FROM HELPER CODE ADDED*/
-  .form-description,
-    aside .content-wrapper {
-      width: 50%;
+  aside .form {
+    padding: 40px 20px;
+    border: 2px dotted purple;
+  }
+
+  aside .form-description {
+    padding: 0 60px;
+    border: 2px dotted purple;
+  }
+
+  /* 
+  aside .form-description p,
+  aside .form-description h3 {
+    border: 2px dotted purple;
+  }
+
+  main aside {
+    border: 2px dotted purple;
+  }
+  */
+
+  
+
+  aside .content-wrapper {
+    margin: 10px 20px;
+    border: 2px dotted purple;
+  }
+
+
+  /*CORRECT CODE FROM HELPER CODE ADDED - but removes the classes for the form  */
+  aside .form-description, 
+  aside .content-wrapper {
+      width: 45%;
       margin: 0;
+      
     }
   
   
+
   
   /*CORRECT CODE FROM HELPER CODE ADDED*/
   .features article {
@@ -467,7 +507,10 @@ article .features-item-description {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    flex-basis: 50%;
+    /*my new code that helped create columns*/
+    flex-basis: 40%;
+    padding: 10px;
+    margin: 15px;
   }
 
   .features .features-item-description {
@@ -497,7 +540,17 @@ article .features-item-description {
     margin: 0;
   }*/
 
- 
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+
   /*Reviews*/
   .reviews {
     display: flex;
@@ -523,18 +576,35 @@ article .features-item-description {
 
   /*Footer*/
   footer .footer-content {
-    width: 80%;
-    padding: 10px 30px;
+    width: 87%;
+    margin: 40px 10px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /*padding: 10px 30px;*/
   }
 
-  /*-----FAQ PAGE------*/
-  .faq-content {
-    flex-basis: 200px;
+  footer .content-wrapper {
+    width: 100%;
+    padding: 0 65px;
   }
 
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  
+
+  /*--------------FAQ PAGE-------------*/
+  
   .faq .content-wrapper {
     margin: 20px 50px;
     display: flex;
@@ -545,11 +615,20 @@ article .features-item-description {
 
   .faq-content {
     flex-basis: 40%;
+    padding: 30px;
+    
   }
 
+  /*CORRECT CODE FROM HELPER CODE ADDED*/
   .faq h2 {
     width: 100%;
   }
+
+  /*
+  .faq-content {
+    flex-basis: 200px;
+  }
+  */
 
 
 
@@ -559,14 +638,29 @@ article .features-item-description {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
+    
+  }
+
+  .mission .content-wrapper {
+    padding: 10px;
+    margin: 40px 20px 50px 0;
+    
   }
 
   .mission-content p {
     width: 45%;
+    
+  }
+
+  .mission {
+    padding-left: 45px;
+    
   }
 
   .contact-section .content-wrapper h2 {
     width: 90%;
+    
   }
 
   .contact-content {
@@ -574,6 +668,12 @@ article .features-item-description {
     justify-content: space-around;
     align-items: center;
   }
+
+  .contact-section .content-wrapper {
+    margin: 50px 45px;
+    padding: 15px;
+  }
+
 
 }
 
