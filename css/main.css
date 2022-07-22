@@ -268,16 +268,7 @@ footer h4 {
   text-align: center;
 }
 
-/*-----MOBILE STYLES------*/
-
-/*CORRECT CODE FROM HELPER CODE ADDED*/
-.hero-area {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  
-}
-
+/*-----------------MOBILE STYLES-----------------*/
 /*HEADER STYLES*/
 header {
   padding: 40px 0;
@@ -311,8 +302,21 @@ header figure {
   flex-flow: row wrap;
 }
 
-main h1 {
-  padding: 20px;
+/*CORRECT CODE FROM HELPER CODE ADDED
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+*/
+
+/*Hero Image*/
+.hero-section {
+  padding: 90px;
+  background-image: url('../img/assets/jake-melara-30679-unsplash\ copy.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
 }
 
 /*CORRECT CODE FROM HELPER CODE ADDED*/
@@ -366,7 +370,7 @@ footer .copyright p {
 }
 
 
-
+/*FEATURES STYLES*/
 /*CORRECT CODE FROM HELPER CODE ADDED*/
 .features {
   display: flex;
@@ -405,14 +409,19 @@ footer .copyright p {
   flex-flow: row wrap;
 }
 
+.features {
+  background-image: url('/img/assets/rawpixel-800820-unsplash1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
 /*FEATURES STYLES
 article .features-item-description {
   width: 45%;
   margin: 0 100px;
 }
 */
-
-
 
 
 /*REVIEW STYLES*/
