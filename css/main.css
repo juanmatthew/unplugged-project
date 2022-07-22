@@ -104,7 +104,7 @@ textarea {
 
 /*CORRECT CODE FROM HELPER CODE ADDED IN BECAUSE MY MOBILE - HOME PAGE DOESN'T HAVE THE FEATURES BE SIDE BY SIDE AND I NEED TO UNDERSTAND WHAT I MISSED*/
 
-/*GENERAL STYLES*/
+/*GLOBAL STYLES*/
 html {
   font-size: 16px;
 }
@@ -149,15 +149,6 @@ p {
   line-height: 18px;
 }
 
-img {
-
-}
-
-/*for the google map*/
-figure {
-
-}
-
 address {
   text-align: center;
   font-style: normal;
@@ -165,6 +156,14 @@ address {
 
 .content-wrapper {
 
+}
+
+img { 
+	width: 100%;
+}
+ 
+figure {
+        margin: 0;
 }
 
 /*CONTENT WRAPPER STYLES*/
@@ -304,6 +303,14 @@ header nav ul {
   background-color: #3a3a3a;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 main h1 {
   padding: 20px;
 }
@@ -390,12 +397,22 @@ footer .copyright p {
   margin: 0;
 }
 
+.feature figure {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /*FEATURES STYLES
 article .features-item-description {
   width: 45%;
   margin: 0 100px;
 }
 */
+
+
 
 
 /*REVIEW STYLES*/
