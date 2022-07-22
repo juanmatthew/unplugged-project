@@ -1,9 +1,15 @@
 
-/*helper border styles*/
+
+
+/*helper border styles
 * {
   border: 1px dotted red;
 }
-/*border: 2px dotted purple;*/
+border: 2px dotted purple;
+border: 2px dotted dodgerblue;
+border: 2px dotted rgb(247, 10, 89);
+*/
+
 
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -119,15 +125,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 2.25em;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: normal;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: normal;
 }
 
 p {
@@ -168,22 +182,27 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 
-header nav {
+/*header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-}
+}*/
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
-  /*align-items: center;*/
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  padding: 0 5px;
+  /*align-items: center;
+  width: 100%;*/
   /*CORRECT CODE FROM HELPER CODE ADDED*/
-  width: 100%;
+  
 }
 
 
@@ -246,7 +265,11 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/*-----Mobile Styles------*/
+footer h4 {
+  text-align: center;
+}
+
+/*-----MOBILE STYLES------*/
 
 /*CORRECT CODE FROM HELPER CODE ADDED*/
 .hero-area {
@@ -258,22 +281,31 @@ footer .copyright {
 
 /*HEADER STYLES*/
 header {
-  padding: 15px 0;
+  padding: 40px 0;
+  text-align: center;
   
 }
 
 header nav {
-  width: 60%;
+  width: 90%;
+  padding-left: 25px;
   
 }
 
 header nav ul {
-  width: 45%;
-  
+  width: 55%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.125em;
 }
 
 .header-divider {
   width: 100%;
+  background-color: #3a3a3a;
+}
+
+main h1 {
+  padding: 20px;
 }
 
 /*CORRECT CODE FROM HELPER CODE ADDED*/
@@ -282,12 +314,31 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+.content-wrapper .form-description {
+  width: 100%;
+  padding: 0;
+}
+
+aside h3 {
+  margin-bottom: 5px;
+}
+
+aside p {
+  margin-top: 0;
+}
+
+.form {
+  padding: 0 20px;
+  margin-bottom: 60px;
 }
 
 /*FOOTER STYLES*/
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 footer .social-icons {
@@ -297,15 +348,10 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-footer .copyright {
-  margin: 40px;
-  padding: 10px;
 }
 
 footer .copyright p {
@@ -319,10 +365,12 @@ footer .copyright p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
 .features article {
@@ -335,6 +383,7 @@ footer .copyright p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 .features p {
@@ -351,8 +400,7 @@ article .features-item-description {
 
 /*REVIEW STYLES*/
 .reviews h3 {
-  width: 80%;
-  margin: 10px;
+  width: 70%;
 }
 
 /*CORRECT CODE FROM HELPER CODE ADDED*/
@@ -360,15 +408,55 @@ article .features-item-description {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  padding-bottom: 50px;
 }
 
 .reviews h2 {
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 
 /*----------ABOUT PAGE--------------*/
 .mission {
-  padding: 10px 15px 10px 0;
+  padding: 20px 15px 50px 0;
+  background-color: #527158;
+  
+}
+
+.contact-section {
+  padding: 20px;
+  background-color: #2a423a;
+}
+
+.contact-section h4,
+.contact-section p {
+  text-align: left;
+}
+
+.contact-section h4 {
+  margin-bottom: 0;
+}
+
+.contact-section p {
+  margin-bottom: 50px;
+}
+
+
+/*--------------FAQ PAGE----------------*/
+.faq {
+  background-color: #527158;
+  padding: 10px 10px 30px 10px;
+
+}
+
+.faq-content h4 {
+  margin-bottom: 0;
+  
+}
+
+.faq-content {
+  margin-bottom: 20px;
   
 }
 
@@ -461,6 +549,34 @@ article .features-item-description {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+  /*--NOTES FROM CLASS:"form on your homepage accepts data from the user with <input> elements -an email input and a button to submit the info"--*/  
+  
+  aside .form {
+    margin-top: 30px;
+  }
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
 
 @media only screen and (min-width:768px){
   /*Tablet Styles Here*/
@@ -475,22 +591,37 @@ article .features-item-description {
 
   /*---------------HOMEPAGE----------------*/
   header {
-    padding: 20px;
-    justify-content: space-around;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  header img {
+    padding-right: 100px;
   }
 
   /*Header Nav Section*/
-   header nav ul {
-    justify-content: space-between;
+  header nav {
+    width:40%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
   }
 
-  header nav {
-    width:35%;
+  header nav ul {
+    justify-content: space-between;
+    
   }
 
   header .content-wrapper {
     width: 100%;
+    margin-left: 100px;
     justify-content: space-between;
+
+    /*width: 100%;*/
   }
 
   /*To get rid of the header divider*/
@@ -630,16 +761,11 @@ article .features-item-description {
   /*Footer*/
   footer .footer-content {
     width: 100%;
-    padding: 60px 10px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    /*padding: 10px 30px;*/
-    
-  }
-
-  footer .content-wrapper {
-    padding: 20px 80px;
+    /*padding: 10px 30px;
+    padding: 10px;*/
     
   }
 
@@ -649,7 +775,18 @@ article .features-item-description {
 
   footer .contact {
     margin-bottom: 0;
-  }*/
+  }
+  
+  footer .content-wrapper {
+    padding: 20px;
+    
+  }
+  
+  footer {
+    border: 2px dotted yellow;
+    padding: 20px 0;
+  }
+  */
 
   
 
