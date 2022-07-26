@@ -1,9 +1,11 @@
 
+
+
+/*helper border styles
+
 * {
   border: 1px dotted red;
 }
-
-/*helper border styles
 
 border: 2px dotted purple;
 border: 2px dotted dodgerblue;
@@ -466,6 +468,22 @@ article .features-item-description {
 
 .contact-section p {
   margin-bottom: 50px;
+}
+
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
+}
+ 
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 
