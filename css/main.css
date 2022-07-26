@@ -691,30 +691,37 @@ article .features-item-description {
   aside {
     display: flex;
     justify-content: space-around;
-  }
-
-  aside .content-wrapper {
-    /*CORRECT CODE FROM HELPER CODE ADDED - also added the class instead of styling the general element*/
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    /* align-items: center;
-    margin: 50px 0;*/
+    align-items: baseline;
+    border: 2px dotted #f9fd01;
   }
 
   aside .form {
-    padding: 40px 80px;
+    width: 40%;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
+    border: 2px dotted #01ff0e;
   }
 
   aside .form-description {
     padding: 0 50px;
-    
+    border: 2px dotted #1ef1f8;
   }
 
-  /* 
+  /*CORRECT CODE FROM HELPER CODE ADDED - but removes the classes for the form  */
+  aside .form-description, 
+  aside .content-wrapper {
+      width: 30%;
+      border: 2px dotted #4d1ef8;
+      /*padding: 30px;*/
+    }
+
+  /*aside .content-wrapper {
+    margin: 10px 20px;
+    border: 4px dotted #f4f81e;
+  }*/
+
+    /* 
   aside .form-description p,
   aside .form-description h3 {
     border: 2px dotted purple;
@@ -725,20 +732,18 @@ article .features-item-description {
   }
   */
 
-  aside .content-wrapper {
-    margin: 10px 20px;
-    
-  }
+  /*  aside .content-wrapper {
+    CORRECT CODE FROM HELPER CODE ADDED - also added the class instead of styling the general element
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    border: 2px dotted #ff00dd;
+     align-items: center;
+    margin: 50px 0;
+  }*/
+  
 
-  /*CORRECT CODE FROM HELPER CODE ADDED - but removes the classes for the form  */
-  aside .form-description, 
-  aside .content-wrapper {
-      width: 45%;
-      margin: 0;
-      
-    }
-  
-  
+  /*FEATURES*/
   /*CORRECT CODE FROM HELPER CODE ADDED*/
   .features article {
     display: flex;
@@ -801,8 +806,31 @@ article .features-item-description {
   }
 
   .reviews h3 {
-    width: 45%;
+    width: 70%;
+    margin: 0;
   }
+
+  .reviews p {
+    margin-top: 5px;
+  }
+
+  .reviews img {
+    width: 85%;
+    margin: 0;
+    padding-left: 20px;
+    
+  }
+
+  .reviews article div {
+    width: 120%;
+    
+  }
+  /*  .reviews figure,
+  .reviews article div {
+   
+    border: 2px dotted #0cfc0c;
+  }
+  */
 
   /*.reviews h3, 
   .reviews p {
@@ -900,19 +928,21 @@ article .features-item-description {
   }
 
   .contact-section .content-wrapper h2 {
-    width: 90%;
-    
+    width: 75%;
+    margin-left: 5px;
   }
 
   .contact-content {
+    width: 100%;
+    padding: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   .contact-section .content-wrapper {
     margin: 50px 45px;
-    padding: 15px;
+    padding: 10px;
   }
 
 
@@ -934,17 +964,14 @@ article .features-item-description {
 
   header {
     padding: 20px 0;
-    border: 4px dotted #34f8ff;
     /*width: 100%;*/
   }
 
   header a {
     padding: 0;
-    border: 2px dotted yellow;
   }
 
   header img{
-    border: 2px dotted dodgerblue;
     width: 60%;
     margin: 0;
   }
@@ -955,7 +982,6 @@ article .features-item-description {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    border: 2px dotted #f81ef8;
   }
 
   header .content-wrapper {
@@ -965,7 +991,6 @@ article .features-item-description {
     margin-left: 25px;
     /*padding: 0 280px;
     flex-basis: 200%;*/
-   
   }
   
   header nav {
@@ -983,22 +1008,34 @@ article .features-item-description {
 
   /*---------------HOMEPAGE-------------------*/
 
+
+
+  /*--------HERO SECTION-------*/
+
+  .hero-section {
+    padding: 200px;
+    background-image: url('../img/assets/jake-melara-30679-unsplash\ copy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  }
+
+  .hero-section h1 {
+    width: 50%;
+  }
+
   /*--ASIDE--SIGNUP FORM--*/
 
   aside {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    border: 2px dotted pink;
   }
-
-  
 
   aside .form {
     width: 35%;
     padding: 10px;
     margin-top: 10px;
-    border: 4px dotted #f210fa;
   }
 
   
@@ -1008,24 +1045,23 @@ article .features-item-description {
   aside .content-wrapper {
      width: 35%;
      padding: 50px;
-     border: 4px dotted black;
     }
 
     aside .form-description h3 {
       padding: 10px;
       margin-bottom: 5px;
-      border: 4px dotted magenta;
+
     }
 
     aside .form-description p {
       margin-top: 5px;
       padding: 10px;
-      border: 2px dotted white;
+
     }
 
-    aside input {
+    /* aside input {
       border: 4px dotted black;
-    }
+    }*/
 
     /*aside .form-description {
     padding: 60px;
@@ -1045,10 +1081,22 @@ article .features-item-description {
     margin: 10px 20px;
     }*/
 
+  /*FEATURES*/
+  .features {
+    padding: 150px;
+  }
+
+  .features article {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-basis: 27%;
+  }
+
   
   
-  
-  /*Reviews*/
+  /*REVIEWS*/
   .reviews {
     padding: 80px 0;
     display: flex;
@@ -1067,17 +1115,16 @@ article .features-item-description {
   .reviews img {
     width: 90%;
     margin: 0;
-    border: 2px dotted #34f8ff;
   }
 
   .reviews article div {
     width: 100%;
-    border: 4px dotted black;
   }
 
+  /*
   .reviews article {
     border: 2px dotted yellow;
-  }
+  }*/
 
   /*
   .reviews article {
@@ -1104,12 +1151,17 @@ article .features-item-description {
   /*CORRECT CODE FROM HELPER CODE ADDED*/
   .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
   footer .contact {
+    width: 30%;
     margin-bottom: 0;
+  }
+
+  footer .social {
+    width: 30%;
   }
 
   /*------------------FAQ----------------------*/
