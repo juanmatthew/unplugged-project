@@ -964,6 +964,24 @@ article .features-item-description {
   }
 
 
+
+  .map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 55%; 
+    overflow: hidden;
+    position: relative;
+  }
+   
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+
+
 }
 
 /*REMINDER: pay attention to the header divider div*/
@@ -1263,6 +1281,25 @@ article .features-item-description {
     padding: 15px;
     border: 2px dotted purple;*/
   }
+
+  .map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 50%; 
+    overflow: hidden;
+    position: relative;
+  }
+   
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+
+
+
 }
 
 /* ==========================================================================
