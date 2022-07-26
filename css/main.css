@@ -348,6 +348,11 @@ aside p {
   margin-bottom: 60px;
 }
 
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
+}
+
 /*FOOTER STYLES*/
 footer .content-wrapper {
   width: 55%;
@@ -778,6 +783,11 @@ article .features-item-description {
     width: 50%;
   }
 
+  .features i {
+    font-size: 3.75em;
+          margin-bottom: 40px;
+  }
+
   /*commenting out to see if the helper code helps my issue
   .features {
     display: flex;
@@ -1130,6 +1140,15 @@ article .features-item-description {
     flex-basis: 27%;
   }
 
+  .features .features-item-description {
+    padding-left: 43px;
+  }
+
+  .features i {
+    font-size: 6.75em;
+          margin-bottom: 40px;
+          margin-left: 50px;
+  }
   
   
   /*REVIEWS*/
