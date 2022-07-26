@@ -1,10 +1,10 @@
 
-
-
-/*helper border styles
 * {
   border: 1px dotted red;
 }
+
+/*helper border styles
+
 border: 2px dotted purple;
 border: 2px dotted dodgerblue;
 border: 2px dotted rgb(247, 10, 89);
@@ -271,10 +271,10 @@ footer h4 {
 /*-----------------MOBILE STYLES-----------------*/
 /*HEADER STYLES*/
 header {
-  padding: 40px 0;
+  /*padding: 40px 0;*/
   text-align: center;
-  
 }
+
 
 header nav {
   width: 90%;
@@ -283,7 +283,7 @@ header nav {
 }
 
 header nav ul {
-  width: 55%;
+  /*width: 55%;*/
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.125em;
@@ -295,7 +295,7 @@ header nav ul {
 }
 
 header figure {
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,14 +359,14 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-  padding: 10px;
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer .copyright p {
-  padding: 5px;
+  padding: 25px;
 }
 
 
@@ -604,6 +604,11 @@ article .features-item-description {
   }
 
 
+
+
+
+
+
 @media only screen and (min-width:768px){
   /*Tablet Styles Here*/
 
@@ -612,42 +617,65 @@ article .features-item-description {
   /*CORRECT CODE FROM HELPER CODE ADDED*/
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    /*margin: 100px 0;*/
   }
 
-  /*---------------HOMEPAGE----------------*/
+  header img { 
+    width: 60%;
+  }
+
   header {
-    padding: 20px 0;
+    /*padding: 10px 0;*/
+    padding-left: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    
   }
 
-  header img {
-    padding-right: 100px;
+  header figure {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  
+  }
+
+  header a {
+    padding: 0;
+  }
+
+  header img{
+    margin: 0;
   }
 
   /*Header Nav Section*/
   header nav {
-    width:40%;
-    padding: 0;
+    /*padding: 0 20px;*/
+    width:30%;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-  }
-
-  header nav ul {
-    justify-content: space-between;
+    justify-content: space-around;
     
   }
 
-  header .content-wrapper {
-    width: 100%;
-    margin-left: 100px;
-    justify-content: space-between;
+  header nav ul {
+    align-items: center;
+    
+  }
 
-    /*width: 100%;*/
+  header nav ul li {
+    margin: 10px;
+  }
+
+  header .content-wrapper {
+    max-width: 980px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    /*width: 100%;
+    margin-left: 100px;*/
   }
 
   /*To get rid of the header divider*/
@@ -905,17 +933,38 @@ article .features-item-description {
   }
 
   header {
-    width: 100%;
     padding: 20px 0;
-    
+    border: 4px dotted #34f8ff;
+    /*width: 100%;*/
+  }
+
+  header a {
+    padding: 0;
+    border: 2px dotted yellow;
+  }
+
+  header img{
+    border: 2px dotted dodgerblue;
+    width: 60%;
+    margin: 0;
+  }
+
+  header figure {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border: 2px dotted #f81ef8;
   }
 
   header .content-wrapper {
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    flex-basis: 200%;
-    margin: 0;
-    /*padding: 0 280px;*/
+    margin-left: 25px;
+    /*padding: 0 280px;
+    flex-basis: 200%;*/
    
   }
   
@@ -923,7 +972,7 @@ article .features-item-description {
     width: 35%;
     display: flex;
     justify-content: center;
-   
+    
   }
   
   header nav ul {
@@ -937,41 +986,71 @@ article .features-item-description {
   /*--ASIDE--SIGNUP FORM--*/
 
   aside {
+    padding: 0;
     display: flex;
     justify-content: space-around;
+    border: 2px dotted pink;
   }
 
-  aside .content-wrapper {
-    /*CORRECT CODE FROM HELPER CODE ADDED - also added the class instead of styling the general element*/
-    margin: 10px 20px;
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    /* align-items: center;
-    margin: 50px 0;*/
-  }
+  
 
   aside .form {
-    padding: 40px 20px;
-    
+    width: 35%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 4px dotted #f210fa;
   }
 
-  aside .form-description {
-    padding: 0 60px;
-    
-  }
+  
 
   /*CORRECT CODE FROM HELPER CODE ADDED - but removes the classes for the form  */
   aside .form-description, 
   aside .content-wrapper {
      width: 35%;
-     margin: 0;
+     padding: 50px;
+     border: 4px dotted black;
     }
 
+    aside .form-description h3 {
+      padding: 10px;
+      margin-bottom: 5px;
+      border: 4px dotted magenta;
+    }
+
+    aside .form-description p {
+      margin-top: 5px;
+      padding: 10px;
+      border: 2px dotted white;
+    }
+
+    aside input {
+      border: 4px dotted black;
+    }
+
+    /*aside .form-description {
+    padding: 60px;
+    border: 2px dotted #fdab40;
+    }*/
+
+
+    /*
+    aside .content-wrapper {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    border: 2px dotted #50fc50;
+    align-items: center;
+    margin: 50px 0;
+    margin: 10px 20px;
+    }*/
+
+  
+  
   
   /*Reviews*/
   .reviews {
-    padding: 10px 0;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -983,6 +1062,21 @@ article .features-item-description {
 
   .reviews h3 {
     width: 50%;
+  }
+
+  .reviews img {
+    width: 90%;
+    margin: 0;
+    border: 2px dotted #34f8ff;
+  }
+
+  .reviews article div {
+    width: 100%;
+    border: 4px dotted black;
+  }
+
+  .reviews article {
+    border: 2px dotted yellow;
   }
 
   /*
