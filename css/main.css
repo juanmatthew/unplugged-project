@@ -875,19 +875,35 @@ article .features-item-description {
   footer .footer-content {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
+    margin: 0;
     /*padding: 10px 30px;
     padding: 10px;*/
-    
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+
+  footer .social-icons p {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .social i {
-    font-size: 2.75em;
+    font-size: 1.75em;
           margin-bottom: 40px;
           color: #527158;
   }
 
+  footer .copyright p {
+    padding: 0;
+    border: 3px dotted red;
+  }
   /*
   border: 2px dotted black;
   border: 2px dotted purple;
@@ -978,11 +994,10 @@ article .features-item-description {
   }
 
   .contact-section .content-wrapper {
-    margin: 50px 45px;
-    padding: 10px;
+    width: 100%;
+    /*margin: 50px 45px;
+    padding: 10px;*/
   }
-
-
 
   .map figure {
     width: 100%;
