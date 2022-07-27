@@ -203,7 +203,11 @@ header nav ul {
   /*align-items: center;
   width: 100%;*/
   /*CORRECT CODE FROM HELPER CODE ADDED*/
-  
+}
+
+header nav ul li {
+  font-size: 1.125em;
+  font-weight: 400;
 }
 
 header img { 
@@ -222,7 +226,7 @@ header .content-wrapper {
 
 /*CORRECT CODE FROM HELPER CODE ADDED*/
 .header-divider {
-  width: 100%;
+  min-width: 760px;
   height: 1px;
   margin: 10px 0 20px 0;
 }
@@ -1115,7 +1119,7 @@ footer .social-icons p {
 
   /*CORRECT CODE ADDED BECAUSE OF ISSUES WITH FAQ AND ABOUT CONTENT*/
   .content-wrapper {
-    max-width: 960px;
+    max-width: 980px;
   }
 
   header {
@@ -1123,16 +1127,23 @@ footer .social-icons p {
     /*width: 100%;*/
   }
 
-  header a {
-    padding: 0;
-  }
 
   header img{
     width: 60%;
     margin: 0;
   }
 
-  header figure {
+  
+  header .content-wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 55px;
+    /*padding: 0 280px;
+    flex-basis: 200%;*/
+  }
+
+  /*header figure {
     width: 35%;
     display: flex;
     justify-content: center;
@@ -1140,26 +1151,21 @@ footer .social-icons p {
     flex-flow: row wrap;
   }
 
-  header .content-wrapper {
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 25px;
-    /*padding: 0 280px;
-    flex-basis: 200%;*/
+
+  header a {
+    padding: 0;
   }
-  
+
   header nav {
     width: 35%;
     display: flex;
     justify-content: center;
-    
   }
   
   header nav ul {
     width: 45%;
-    
   }
+*/
 
 
   /*---------------HOMEPAGE-------------------*/
@@ -1172,7 +1178,7 @@ footer .social-icons p {
     font-weight: 400;
     width: 75%;
     padding-top: 20px;
-    padding-left: 50px;
+    padding-left: 140px;
   }
 
   .hero-section {
@@ -1251,6 +1257,7 @@ footer .social-icons p {
 
   .features h2 {
     width: 70%;
+    padding-left: 140px;
   }
 
   .features .features-item-description {
