@@ -545,15 +545,27 @@ footer .social-icons p {
 
 
 /*--------------FAQ PAGE----------------*/
+
+/*CORRECT CODE FROM HELPER CODE ADDED*/
 .faq {
   background-color: #527158;
   padding: 10px 10px 30px 10px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .faq-content h4 {
   margin-bottom: 0;
   
+}
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .faq-content {
@@ -561,7 +573,12 @@ footer .social-icons p {
   
 }
 
-/*CORRECT CODE FROM HELPER CODE ADDED*/
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -1018,21 +1035,23 @@ footer .social-icons p {
   
   .faq .content-wrapper {
     margin: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   .faq-content {
-    flex-basis: 40%;
-    padding: 30px;
-    
+    flex-basis: 45%;
+   /* padding: 30px;*/
   }
 
   /*CORRECT CODE FROM HELPER CODE ADDED*/
   .faq h2 {
     width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: 0.875em;
+      line-height: 18px;
   }
 
   /*
