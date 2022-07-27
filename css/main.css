@@ -1164,56 +1164,58 @@ footer .social-icons p {
 
   /*---------------HOMEPAGE-------------------*/
 
-
-
   /*--------HERO SECTION-------*/
 
+  .hero-section h1 {
+    font-size: 3.75em;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 400;
+    width: 75%;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
   .hero-section {
-    padding: 200px;
+    padding-top: 50px;
     background-image: url('../img/assets/jake-melara-30679-unsplash\ copy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
-  }
-
-  .hero-section h1 {
-    width: 50%;
+    background-position: center;
+    min-height: 700px;
+    background-color: #202322;
   }
 
   /*--ASIDE--SIGNUP FORM--*/
-
   aside {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   aside .form {
-    width: 35%;
+    width: 25%;
     padding: 10px;
     margin-top: 10px;
   }
 
-  
-
   /*CORRECT CODE FROM HELPER CODE ADDED - but removes the classes for the form  */
   aside .form-description, 
   aside .content-wrapper {
-     width: 35%;
-     padding: 50px;
-    }
+     width: 27%;
+     padding-left: 10px;
+  }
 
-    aside .form-description h3 {
-      padding: 10px;
-      margin-bottom: 5px;
+  aside .form h3 {
+    font-size: 1.875em;
+  }
+  aside .form-description h3 {
+    font-size: 1.875em;
+  }
 
-    }
-
-    aside .form-description p {
-      margin-top: 5px;
-      padding: 10px;
-
-    }
+  aside .form-description p {
+    font-size: 1.125em;
+  }
 
     /* aside input {
       border: 4px dotted black;
@@ -1238,53 +1240,67 @@ footer .social-icons p {
     }*/
 
   /*FEATURES*/
-  .features {
-    padding: 150px;
+  .features article {
+    flex-basis: 27%;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    /*display: flex;
+    justify-content: center;
+    flex-flow: row wrap;*/
   }
 
-  .features article {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    flex-basis: 27%;
+  .features h2 {
+    width: 70%;
   }
 
   .features .features-item-description {
     padding-left: 43px;
+    font-size: 1.125em;
+    line-height: 24px;
   }
 
   .features i {
-    font-size: 6.75em;
-          margin-bottom: 40px;
+    font-size: 4.875em;
+          margin-bottom: 25px;
           margin-left: 50px;
   }
   
   
   /*REVIEWS*/
-  .reviews {
-    padding: 80px 0;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
-
   .reviews h2 {
-    margin: 40px 0;
+    font-size: 2.25em;
+    margin-bottom: 50px;
   }
 
   .reviews h3 {
-    width: 50%;
+    width: 80%;
+    font-size: 1.875em;
+  }
+
+  .reviews article {
+    width: 100%;
   }
 
   .reviews img {
+    padding: 0;
     width: 90%;
-    margin: 0;
   }
 
-  .reviews article div {
-    width: 100%;
+  .reviews p {
+    font-size: 1.125em;
+    line-height: 24px;
   }
+
+  /* .reviews img {
+    width: 72%;
+  }
+  .reviews {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }*/
+
+
 
   /*
   .reviews article {
@@ -1303,20 +1319,50 @@ footer .social-icons p {
   */
 
   /*Footer*/
-  footer {
-    padding: 5px 0;
+  footer h4 {
+    font-size: 1.875em;
   }
 
+  footer .contact p {
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+
+
+  .social i {
+    font-size: 2.75em;
+          margin-bottom: 40px;
+          color: #527158;
+  }
+
+  footer .social-icons p {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  /*
+    footer {
+    padding: 5px 0;
+  }
 
   footer .content-wrapper {
     width: 100%;
     padding: 0 65px;
   }
 
-  /*CORRECT CODE FROM HELPER CODE ADDED*/
+  CORRECT CODE FROM HELPER CODE ADDED
   .footer-content {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+  }
+
+  footer .social-icons p {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -1327,7 +1373,7 @@ footer .social-icons p {
 
   footer .social {
     width: 30%;
-  }
+  }*/
 
   /*------------------FAQ----------------------*/
 
