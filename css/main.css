@@ -698,6 +698,7 @@ footer .social-icons p {
 
   header {
     /*padding: 10px 0;*/
+    padding-top: 30px;
     padding-left: 10px;
     display: flex;
     justify-content: space-between;
@@ -738,6 +739,8 @@ footer .social-icons p {
 
   header nav ul li {
     margin: 10px;
+    font-size: 1em;
+    font-weight: 400;
   }
 
   header .content-wrapper {
@@ -763,24 +766,27 @@ footer .social-icons p {
     font-size: 3em;
     font-family: 'Poppins' sans-serif;
     font-weight: 400;
+    padding-top: 30px;
     padding-left: 50px;
   }
 
   .hero-section {
-    padding-top: 20px;
+    padding-top: 50px;
     background-image: url('../img/assets/jake-melara-30679-unsplash\ copy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
-    min-height: 500px;
+    background-position: center;
+    min-height: 600px;
+    background-color: #202322;
   }
   
-  .hero-section .content-wrapper {
+  /*.hero-section .content-wrapper {
     margin: 0;
-  }
+  }*/
 
   /*Aside--Sign Up Form Area*/
   aside {
+    padding-bottom: 35px;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
@@ -842,6 +848,10 @@ footer .social-icons p {
   
 
   /*FEATURES*/
+  .features {
+    padding-bottom: 100px;
+  }
+
   /*CORRECT CODE FROM HELPER CODE ADDED*/
   .features h2 {
     font-size: 2.25em;
