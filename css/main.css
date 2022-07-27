@@ -1,6 +1,5 @@
 
 
-
 /*helper border styles
 
 * {
@@ -1062,12 +1061,17 @@ footer .social-icons p {
 
   .mission-content p {
     width: 45%;
-    
+    font-size: 0.875em;
+    line-height: 18px;
   }
 
   .mission {
     padding-left: 45px;
-    
+  }
+
+  .mission .content-wrapper h2{
+    font-size: 2.075em;
+    font-weight: 400;
   }
 
   .contact-section .content-wrapper h2 {
@@ -1257,7 +1261,7 @@ footer .social-icons p {
 
   .features h2 {
     width: 70%;
-    padding-left: 140px;
+    padding-left: 150px;
   }
 
   .features .features-item-description {
@@ -1435,8 +1439,14 @@ footer .social-icons p {
 
   .mission-content p {
     width: 45%;
-    
+    font-size: 1.125em;
+    line-height: 24px;
   }
+
+  .mission h2 {
+    font-size: 3em;
+  }
+
 
   .mission {
     padding-left: 150px;
@@ -1444,7 +1454,13 @@ footer .social-icons p {
   }
 
   .contact-section .content-wrapper h2 {
-    width: 80%;
+    width: 100%;
+    margin-left: 140px;
+    font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
   
   /*contact section*/
@@ -1452,17 +1468,16 @@ footer .social-icons p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    margin-left: 50px;
   }
 
-  .contact-section .content-wrapper {
+  /* .contact-section .content-wrapper {
     margin-left: 150px;
-    
-    /*
     margin: 50px 45px;
     padding: 15px;
-    border: 2px dotted purple;*/
-  }
+    border: 2px dotted purple;
+  }*/
+
 
   .map figure {
     width: 100%;
