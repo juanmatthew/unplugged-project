@@ -226,7 +226,7 @@ header .content-wrapper {
 
 /*CORRECT CODE FROM HELPER CODE ADDED*/
 .header-divider {
-  min-width: 360px;
+  min-width: 370px;
   height: 1px;
   margin: 10px 0 20px 0;
 }
@@ -431,7 +431,7 @@ aside p {
 }
 
 .features {
-  background-image: url('/img/assets/rawpixel-800820-unsplash1.png');
+  background-image: url('../img/assets/rawpixel-800820-unsplash1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center;
